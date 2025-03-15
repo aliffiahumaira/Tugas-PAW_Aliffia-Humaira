@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.form-container {
+    width: 700px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.form-container h3 {
+    font-size: 28px;
+    text-align: center;
+    
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+label {
+    width: 35%;
+    font-size: 14px;
+    color: #fff5ee
+}
+
+.input-box {
+    width: 65%;
+    position: relative;
+}
+
+input, select, textarea {
+    width: 65%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.input-box input::placeholder,
+.input-box textarea::placeholder {
+    color: rgba(255, 255, 255, .7);
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.radio-group input {
+    width: auto;
+}
+
+button {
+    width: 30%; 
+    padding: 10px;
+    border: none;
+    background: #fff;
+    color: #e0bfb8;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block; 
+    margin: 20px auto 0; 
+    text-align: center;
+}
+
+button:hover {
+    background: #ddd;
+}
+
+select {
+    width: 65%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 14px;
+    background: #fff;
+    color: #e0bfb8; 
+    outline: none;
+}
+
+
+select option {
+    background-color: #fff; 
+    color: #e0bfb8; 
+}

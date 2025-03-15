@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="form-container">
+        <h3>Contact Form</h3> <br>
+        <form action="cv.html" method="GET">
+            <div class="form-group">
+                <label for="nama">Nama  :</label> 
+                <input type="text" id="nama" name="nama" required> 
+            </div>
+
+            <div class="form-group">
+                <label for="no">No Hp/WA    :</label>
+                <input type="text" id="no" name="nohp" required>
+            </div>
+
+            <div class="form-group">
+                <label>Jenis Kelamin    :</label>
+                <div class="radio-group">
+                    <input type="radio" id="laki" name="jeniskelamin" value="Laki-laki">
+                    <label for="laki">Laki-laki</label>
+                    <input type="radio" id="perempuan" name="jeniskelamin" value="Perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="pendidikan">Pendidikan  :</label>
+                <select name="pendidikan" id="pendidikan">
+                    <option value="tk">TK</option>
+                    <option value="sd">SD</option>
+                    <option value="smp">SMP</option>
+                    <option value="sma">SMA</option>
+                    <option value="d1">D1</option>
+                    <option value="d2">D2</option>
+                    <option value="d3">D3</option>
+                    <option value="s1">S1</option>
+                    <option value="s2">S2</option>
+                    <option value="s3">S3</option>
+                </select> 
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail   :</label> 
+                <input type="email" id="email" name="email" required> 
+            </div>
+
+            <div class="form-group">
+                <label for="keperluan">Keperluan    :</label>
+                <textarea name="keperluan" id="keperluan" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
